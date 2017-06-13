@@ -1,0 +1,172 @@
+*, *::before, *::after {
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+html {
+    height: 100%;
+    font-size: 100%;
+}
+
+body {
+    display: flex;
+    flex-wrap: nowrap;
+    color: black;
+    min-height: 100%;
+    background-color: rgb(73,147,120);
+    font-size: 20px;
+    font-weight: 400;
+    font-family: 'Roboto', sans-serif;
+}
+
+.nav-btn {
+    background: url(../assets/menu_icon.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    cursor: pointer;
+    border: none;
+    width: 100px;
+    height: 100px;
+    border-radius: 50px;
+    background-color: rgb(0,0,0);
+    box-shadow: none;
+    position: absolute;
+    top: 2vh;
+    right: 2vw;
+    z-index: 100;
+}
+
+.nav-btn:active {
+     background: url(../assets/menu_icon.png);
+     background-repeat: no-repeat;
+}
+
+.nav-menu {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 20vmin;
+    min-width: 200px;
+    height: 100vh;
+    text-align: center;
+    background-color: rgb(73,147,120);
+    display: flex;
+    flex-direction: column;
+    z-index: 99;
+}
+
+.close-menu {
+  border: none;
+  box-shadow: none;
+  width: 20px;
+  height: 20px;
+  left: 2vw;
+  top: 2vh;
+  border-radius: 10px;
+  color: rgb(73,147,120);
+  background-color: black;
+  font-weight: bolder;
+  margin: 1rem;
+}
+
+.profile-pic {
+  position: relative;
+  left: 4vw;
+  margin-bottom: 5vh;
+  height: 100px;
+  width: 100px;
+  border-radius: 50px;
+  background: url(../assets/profile_pic.jpg);
+  background-repeat: no-repeat;
+  background-position: left;
+  overflow: hidden;
+}
+
+.views {
+  list-style: none;
+  font-size: 2rem;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: bolder;
+}
+
+.view-item {
+  display: table;
+  padding: ..25rem;
+  margin-left: 2.5vw;
+  cursor: pointer;
+}
+
+.view-item:hover {
+  font-size: 2.5rem;
+}
+
+.social-media-links {
+  margin-top: 5vh;
+}
+
+.linkedin {
+  background: url(../assets/icon_linkedin_64x64.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  cursor: pointer;
+  border: none;
+  width: 64px;
+  height: 64px;
+  background-color: none;
+  box-shadow: none;
+}
+
+.github {
+  background: url(../assets/icon_github_64x64.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  cursor: pointer;
+  border: none;
+  width: 64px;
+  height: 64px;
+  background-color: none;
+  box-shadow: none;
+}
+
+.container {
+    margin: 0 auto;
+    max-width: 64rem;
+}
+
+.container.narrow {
+    max-width: 56rem;
+}
+
+/* Medium and small screens (640px) */
+@media (min-width: 640px) {
+    html { font-size: 112%; }
+
+    .column {
+        float: left;
+        padding-left: 1rem;
+        padding-right: 1rem;
+    }
+
+    .column.full { width: 100%; }
+    .column.two-thirds { width: 66.7%; }
+    .column.half { width: 50%; }
+    .column.third { width: 33.3%; }
+    .column.fourth { width: 25%; }
+    .column.flow-opposite { float: right; }
+}
+
+/* Large screens (1024px) */
+@media (min-width: 1024px) {
+    html { font-size: 120%; }
+}
+
+.clearfix::before,
+.clearfix::after {
+    content: " ";
+    display: table;
+}
+
+.clearfix::after {
+    clear: both;
+}

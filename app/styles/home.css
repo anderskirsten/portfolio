@@ -1,0 +1,59 @@
+body {
+    color: black;
+    min-height: 100%;
+    background-color: rgb(73,147,120);
+    overflow: auto;
+}
+
+.home-content {
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+}
+
+.home-image-left {
+  background-image: url(../assets/GirlGraffiti_Mexico2016.jpg);
+  background-repeat: no-repeat;
+  background-position: left center;
+  background-size: cover;
+  height: 100vh;
+  width: 35vw;
+  overflow-x: visible;
+}
+
+.home-image-right {
+  background-image: url(../assets/BoyGraffiti_Mexico2016.jpg);
+  background-repeat: no-repeat;
+  background-position: right center;
+  background-size: cover;
+  height: 100vh;
+  width: 35vw;
+  overflow-x: visible;
+}
+
+.home-content-center {
+  background-color: rgb(73,147,120);
+  height: 100vh;
+  width: 30vw;
+  min-width: 225px;
+  z-index: 99;
+  text-align: center;
+}
+
+.name-title {
+  font-size: 2rem;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: bolder;
+}
+
+.fa-chevron-down {
+  font-size: 5rem;
+  padding-top: 5rem;
+  cursor: pointer;
+}
+
+.headshot {
+  padding-top: 5rem;
+  margin: auto;
+  width: 50%;
+}

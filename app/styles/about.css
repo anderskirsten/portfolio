@@ -1,0 +1,81 @@
+body {
+    color: black;
+    min-height: 100%;
+    background-color: rgb(73,147,120);
+    overflow: auto;
+}
+
+.about-content {
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: space-around;
+}
+
+.titles {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: bolder;
+  display: block;
+}
+
+.page-title {
+  position: relative;
+  top: 0;
+  left: 2vw;
+  font-size: 10rem;
+  font-weight: 800;
+  margin-bottom: 0;
+  padding-bottom: 0;
+}
+
+.page-subtitle {
+  position: relative;
+  top: 0;
+  left: 2vw;
+  font-size: 4rem;
+  font-weight: 800;
+  padding-top: 0;
+  margin-top: 0;
+}
+
+.bio-text {
+  font-size: 1.5rem;
+  position: relative;
+  width: 55vw;
+  height: 48vh;
+  text-align: justify;
+  left: 2vw;
+  padding-top: 2vh;
+  padding-right: 3vw;
+  overflow: hidden;
+}
+
+.blah-blah-me {
+  padding-bottom: 2vh;
+}
+
+.nav-arrows {
+  position: absolute;
+  left: 45vw;
+  bottom: 2vh;
+}
+
+.fa-chevron-down {
+    font-size: 5rem;
+    padding-top: 5rem;
+    cursor: pointer;
+}
+
+.fa-chevron-up {
+    font-size: 5rem;
+    padding-top: 5rem;
+    cursor: pointer;
+}
+
+.skill-graphic {
+  position: relative;
+  left: 5vw;
+  height: 50vh;
+  width: 35vw;
+  padding-top: 3vh;
+  z-index: 50;
+}

@@ -1,0 +1,26 @@
+{
+  "name": "portfolio",
+  "version": "0.0.1",
+  "description": "Personal Portfolio of Kirsten Anderson",
+  "main": "server.js",
+
+  "scripts": {
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/anderskirsten/portfolio.git"
+  },
+  "author": "Kirsten Anderson",
+  "license": "ISC",
+
+  "dependencies": {
+    "hapi": "~7.5.0",
+    "path": "^0.4.9"
+  },
+
+  "devDependencies": {
+    "connect-modrewrite": "^0.7.9",
+    "es5-shim": "^4.0.1"
+  }
+}

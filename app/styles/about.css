@@ -8,7 +8,7 @@ body {
 .about-content {
   display: flex;
   flex-wrap: nowrap;
-  justify-content: space-around;
+  justify-content: space-between;
 }
 
 .titles {
@@ -22,7 +22,7 @@ body {
   top: 0;
   left: 2vw;
   font-size: 10rem;
-  font-weight: 800;
+  font-weight: bolder;
   margin-bottom: 0;
   padding-bottom: 0;
 }
@@ -38,15 +38,14 @@ body {
 }
 
 .bio-text {
-  font-size: 1.5rem;
+  font-size: 2rem;
   position: relative;
   width: 55vw;
-  height: 48vh;
+  height: 55vh;
   text-align: justify;
   left: 2vw;
   padding-top: 2vh;
   padding-right: 3vw;
-  overflow: hidden;
 }
 
 .blah-blah-me {
@@ -54,28 +53,73 @@ body {
 }
 
 .nav-arrows {
-  position: absolute;
+  position: relative;
+  margin: auto;
   left: 45vw;
-  bottom: 2vh;
+  bottom: 17vh;
 }
 
 .fa-chevron-down {
     font-size: 5rem;
-    padding-top: 5rem;
     cursor: pointer;
 }
 
 .fa-chevron-up {
     font-size: 5rem;
-    padding-top: 5rem;
     cursor: pointer;
 }
 
 .skill-graphic {
   position: relative;
   left: 5vw;
-  height: 50vh;
-  width: 35vw;
-  padding-top: 3vh;
+  height: 45vh;
+  width: 30vw;
+  margin-top: 10vh;
   z-index: 50;
+}
+
+@media (max-width: 1000px) {
+  .about-content {
+    min-width: 100vw;
+    min-height: 100vh;
+  }
+
+  .skill-graphic {
+    display: none;
+  }
+
+  .nav-arrows {
+    display: none;
+  }
+
+  .titles {
+    padding-top: 8vh;
+    margin: auto;
+  }
+
+  .page-title {
+    font-size-adjust: auto;
+  }
+
+  .bio-text {
+    margin: auto;
+  }
+}
+
+@media (max-width: 360px) {
+  .titles {
+    position: relative;
+    text-align: center;
+    width: 300px;
+  }
+
+  .page-title {
+    font-size: 5rem;
+    margin-top: 20vh;
+  }
+
+  .bio-text {
+    width: 300px;
+    font-size: 1.75rem;
+  }
 }

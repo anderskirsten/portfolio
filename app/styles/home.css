@@ -52,8 +52,69 @@ body {
   cursor: pointer;
 }
 
+.art-credit-container {
+  position: absolute;
+  display: inline-flex;
+  bottom: 3vh;
+  left: 3vw;
+}
+
+.fa-eye {
+  position: relative;
+  margin: auto;
+  font-size: 3rem;
+  cursor: pointer;
+  z-index: 100;
+}
+
+.graffiti-art-credit {
+  color: black;
+  font-weight: bolder;
+  position: relative;
+  margin-left: 1vw;
+  background-color: rgba(64,132,107,0.7);
+  background-position: center;
+  background-size: contain;
+  background-clip: content-box;
+}
+
 .headshot {
   padding-top: 5rem;
   margin: auto;
   width: 50%;
+}
+
+@media (max-width: 1000px) {
+
+  .home-image-right {
+    display: none;
+  }
+
+  .home-content-center {
+    margin-left: 10vw;
+  }
+}
+
+@media (max-width: 650px) {
+  .home-image-left{
+    display: none;
+  }
+}
+
+@media (max-width: 325px) {
+  .headshot {
+    display: none;
+  }
+
+  .home-content-center {
+    margin-top: 25vh;
+  }
+
+  .nav-btn {
+    margin-right: 25vw;
+  }
+
+  .nav-menu {
+    z-index: 100;
+  }
 }

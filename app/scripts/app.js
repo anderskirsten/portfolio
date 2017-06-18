@@ -18,6 +18,13 @@
                   url: '/about',
                   controller: 'HomeCtrl as home',
                   templateUrl: '/templates/about.html'
+              })
+
+          $stateProvider
+              .state('projects', {
+                  url: '/projects',
+                  controller: 'ProjectCtrl as project',
+                  templateUrl: '/templates/projects.html'
               });
     }
 

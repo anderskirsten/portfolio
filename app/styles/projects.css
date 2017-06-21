@@ -113,7 +113,7 @@ span.text-content {
   color: black;
   background-color: rgb(73,147,120);
   padding-bottom: 1vh;
-  margin-top: 2vh;
+  margin-top: 1vh;
 }
 
 .learn-more-btn:hover {
@@ -176,6 +176,12 @@ span.text-content {
     min-height: 120%;
   }
 
+  .nav-arrows-projects {
+    display: none;
+  }
+}
+
+@media (max-height: 700px) {
   .nav-arrows-projects {
     display: none;
   }

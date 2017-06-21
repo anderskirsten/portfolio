@@ -1,0 +1,74 @@
+<section class="modal-box">
+    <div class="links-container">
+      <div class="close-btn-container">
+          <button class="btn-close" type="button" ng-click="modal.cancel()">X</button>
+      </div>
+      <a>
+        <button class="live-site-demo lk-chat" ng-click="modal.openDemoMsg()"></button>
+      </a>
+      <a href="https://github.com/anderskirsten/letterkenny-chat"  target="_blank">
+        <button class="code-link"></button>
+      </a>
+    </div>
+
+    <div class="modal-img-container">
+        <img src="../assets/LKChat_login_screenshot.png" class="img-responsive" alt="Chat App Landing Page">
+    </div>
+
+    <div class="case-study-container">
+      <h1>Case Study</h1>
+
+      <p>
+        <h3>Summary:</h3>
+        Letterkenny Chat is a web application that provides a place for fans of the Canadian sitcom hit, “Letterkenny,” produced by CraveTV, to interact. More importantly, this project was an opportunity to expand my budding Angular skill set, as well as creating an application that communicates with a backend database; in this case, Firebase.
+      </p>
+
+      <p>
+        <h3>Explanation:</h3>
+        <h4>The goals of the project included:</h4>
+        <ul>
+          <li>Use of Angularjs architecture</li>
+          <li>Use of Nodejs for local development server and dependency package manager</li>
+          <li>Use of Angularjs and Vanilla Javascript to add functionality for users to view and send messages, add new chat rooms and choose a username</li>
+          <li>Use of Firebase database to store and reference user messages and chat room objects</li>
+          <li>Use of Cookies to store local username and display as data included in user message objects</li>
+          <li>Use of UI-Bootstrap to create modals for the user interface</li>
+        </ul>
+      </p>
+
+      <p>
+        <h3>Problems & Solutions:</h3>
+
+        <h4>Login and Authentication</h4>
+        I decided to create a true login feature, which meant I needed to consider authentication. Looking at the Firebase options, which include using it as a RESTful API, dealing with the SDK, acquiring OAuth or JWT tokens or API keys and the plethora of other options left my head spinning. Stepping back, I opted to use the AngularFire library and create the needed authentication, as well as creating an automatic registration process that would store and reference the user object within the database as needed.</br></br>
+
+        <h4>Architecture</h4>
+        This project allowed me to learn a great deal about ui-router, directives and logic location.</br></br>
+
+        Wanting to potentially populate the same dropdown menu with a login or registration form led me to using a directive to reference either template, which was then all nested in the dropdown menu. However, I disliked users having to use tab-type buttons to switch the views. This made me rethink the need for separate registration and I decided to simplify the process with an automatic registration, allowing the user a more streamlined entry and experience. With my newfound directive familiarity, I went on to use this technique to encapsulate the login template and chat room message panel as inserted elements within the main html.</br></br>
+
+        My explorations with ui-router to play with state and ui-sref versus ui-view options, led me to learn a great deal about partial templates, as well as the structure of traditional states versus nested views.</br></br>
+
+        Finally, I really just got more comfortable with Angular, mapping out the architecture of specific features as well as the overall program on a white board and within coggle, an online visual mapping tool. One of my biggest takeaways was the cementing of the MVC structure within my mind - starting to truly understand things like - controllers are there to communicate and link the view (browser rendered content) to the model (templates) and services are meant to provide the logic and will always return an object containing your controller referenced methods.</br></br>
+
+        <h4>Design</h4>
+        While I did do some best practices for this project, including wireframing the initial pages/concept, I did not take into account responsive design and this caused considerable delay in the polishing phase of pre-deployment, including a total redesign of the chat room and message interface. Use of techniques including CSS’s flexbox and viewport units was revelatory.</br>Lesson learned = design responsively from the get go!</br>
+      </p>
+
+      <p>
+        <h3>Results:</h3>
+        Letterkenny Chat successfully provides an application for fans to chat about their favorite show and its characters. Users can login/logout, create a new chatroom, select an existing room as well as read and send messages. Testing revealed issues with username data accessibility, authentication status and responsive design, allowing for solutions prior to deployment.</br></br>
+
+        This application has lots of room for new features in the future, including user profiles, a live voting widget for fan favorite quotes and a facebook type page for sharing farts, based on one of the series’ most popular bits, “Fartbook.”</br>
+      </p>
+
+      <p>
+        <h3>Conclusion:</h3>
+        This project has provided me with a deeper understanding of Angularjs, which will allow me to make use of techniques and best practices I had previously been unfamiliar with; providing a faster development and deployment on future applications.</br></br>
+
+        While this was my first foray into authentication and was therefore very simple, it did open my eyes to the variety of techniques and technology available. I also gained a new understanding of the need for user security and common pain points like token renewal/timeout that I am likely to encounter throughout my career.</br></br>
+
+        Finally, while CSS will never be a quick process, integrating responsive design from the start of a project is a huge timesaver and something I will incorporate into my process moving forward. In the age of smart devices of all sizes and our culture’s growing demand for content on the go, responsive design is not optional.</br>
+      </p>
+    </div>
+</section>

@@ -12,7 +12,9 @@ body {
   flex-direction: row;
   -webkit-justify-content: flex-start;
   justify-content: flex-start;
-  margin-top: 10vh;
+  position: relative;
+  bottom: 5vh;
+  margin-top: 0;
   margin-left: 5vw;
   z-index: 90;
 }
@@ -44,15 +46,16 @@ body {
 
 .page-subtitle-about {
   position: relative;
-  bottom: 17vh;
-  font-size: 4rem;
+  bottom: 19vh;
+  font-size: 3rem;
   font-weight: bold;
+  padding-top: 3vh;
 }
 
 .bio-text {
   position: relative;
   width: 45vw;
-  bottom: 10vh;
+  bottom: 13vh;
   font-size: 2rem;
   text-align: justify;
 }
@@ -65,6 +68,7 @@ body {
   position: absolute;
   left: 45vw;
   top: 80vh;
+  margin-top: 5vh;
 }
 
 .fa-chevron-down {
@@ -125,6 +129,7 @@ body {
   .page-title-about {
     font-size: 6rem;
     margin-bottom: 10vh;
+    margin-top: 10vh;
   }
 
   .page-subtitle-about {
@@ -178,5 +183,10 @@ body {
 
   .bio-text {
     width: 45vw;
+  }
+
+  .nav-arrows-about {
+    top: 60vh;
+    left: 40vw;
   }
 }

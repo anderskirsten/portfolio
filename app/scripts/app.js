@@ -23,7 +23,7 @@
           $stateProvider
               .state('projects', {
                   url: '/projects',
-                  controller: 'ProjectCtrl as project',
+                  controller: 'ProjectCtrl as projects',
                   templateUrl: '/templates/projects.html'
               });
     }

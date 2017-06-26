@@ -25,6 +25,13 @@
                   url: '/projects',
                   controller: 'ProjectCtrl as projects',
                   templateUrl: '/templates/projects.html'
+              })
+
+          $stateProvider
+              .state('blog-portal', {
+                  url: '/blog-portal',
+                  controller: 'BlogCtrl as blog',
+                  templateUrl: '/templates/blog_portal.html'
               });
     }
 

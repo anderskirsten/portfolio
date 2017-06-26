@@ -7,10 +7,12 @@
   "scripts": {
     "start": "node server.js"
   },
+  
   "repository": {
     "type": "git",
     "url": "https://github.com/anderskirsten/portfolio.git"
   },
+
   "author": "Kirsten Anderson",
   "license": "ISC",
 

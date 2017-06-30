@@ -5,7 +5,7 @@
       // opens demo_coming_soon modal
       modal.openDemoMsg = function() {
         $uibModal.open({
-        templateUrl: '../templates/demo_coming_soon.modal.html',
+        templateUrl: '../templates/modals/demo_coming_soon.modal.html',
         size: 'sm',
         controller: 'ModalCtrl as modal'
         });

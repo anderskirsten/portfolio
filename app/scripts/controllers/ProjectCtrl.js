@@ -7,7 +7,7 @@
         console.log("the learn more button has been clicked");
 
         $uibModal.open({
-        templateUrl: '../templates/musicology.modal.html',
+        templateUrl: '../templates/modals/musicology.modal.html',
         size: 'lg',
         controller: 'ModalCtrl as modal'
         });
@@ -18,7 +18,7 @@
         console.log("the learn more button has been clicked");
 
         $uibModal.open({
-        templateUrl: '../templates/lk_chat.modal.html',
+        templateUrl: '../templates/modals/lk_chat.modal.html',
         size: 'lg',
         controller: 'ModalCtrl as modal'
         });
@@ -29,7 +29,7 @@
         console.log("the learn more button has been clicked");
 
         $uibModal.open({
-        templateUrl: '../templates/portfolio.modal.html',
+        templateUrl: '../templates/modals/portfolio.modal.html',
         size: 'lg',
         controller: 'ModalCtrl as modal'
         });

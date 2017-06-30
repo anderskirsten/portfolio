@@ -79,12 +79,15 @@ footer {
   color: rgb(73,147,120);
   display: flex;
   flex-direction: column;
-  height: auto;
+  height: 100%;
+  width: 100%;
 }
 
 .blog-content tr {
-  width: 100%;
+  position: relative;
+  display: inline-table;
   justify-content: center;
+  width: 100%;
 }
 
 .blog-title {
@@ -111,26 +114,26 @@ footer {
 
 .blog-text {
   text-align: justify;
+  height: auto;
   max-height: 90vh;
   overflow-y: visible;
   padding-bottom: 5vh;
+  margin-bottom: 1vh;
   width: 100%;
 }
 
-.read-more-btn-container {
-  position: relative;
+tr.read-more-btn-container {
+  position: absolute;
+  bottom: 2vh;
+  left: .75vw;
 }
-
 .read-more-btn {
-  width: 85%;
+  width: 95%;
   color: black;
   font-weight: bold;
   font-size: 2rem;
   background-color: rgb(73,147,120);
   border-radius: 0;
-  position: absolute;
-  margin-right: .5vw;
-  bottom: 2vh;
 }
 
 .read-more-btn:hover {

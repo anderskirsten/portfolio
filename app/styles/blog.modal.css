@@ -1,0 +1,27 @@
+.blog-modal-content {
+  max-width: 95vw;
+  max-height: 95vh;
+  display: grid;
+  grid-template-columns: 3fr 1fr;
+  grid-template-areas:
+    "header sidebar"
+    "main sidebar"
+    "footer sidebar";
+  grid-gap: 1vh;
+}
+
+.blog-modal-content header {
+  grid-area: header;
+}
+
+.blog-modal-content ul {
+  grid-area: main;
+}
+
+.blog-modal-content aside {
+  grid-area: sidebar;
+}
+
+.blog-modal-content footer {
+  grid-area: footer;
+}

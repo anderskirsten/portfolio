@@ -1,4 +1,16 @@
-header {
+.blog-portal-content {
+  max-width: 95vw;
+  max-height: 95vh;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-areas:
+    "header header header"
+    "main main main"
+    "footer footer footer";
+  grid-gap: 1vh;
+}
+
+.blog-portal-content header {
   grid-area: header;
   display: flex;
   justify-content: flex-start;
@@ -15,7 +27,7 @@ header {
   grid-area: main;
 }
 
-footer {
+.blog-portal-content footer {
   grid-area: footer;
 }
 
@@ -24,18 +36,6 @@ footer {
   display: inline-block;
   text-align: center;
   margin-bottom: 5vh;
-}
-
-.blog-portal-content {
-  max-width: 95vw;
-  max-height: 95vh;
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  grid-template-areas:
-    "header header header"
-    "main main main"
-    "footer footer footer";
-  grid-gap: 1vh;
 }
 
 .page-title-blog-portal {

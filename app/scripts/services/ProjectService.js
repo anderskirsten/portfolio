@@ -2,6 +2,8 @@
     function ProjectService() {
         var ProjectService = {};
 
+        // will interact with database once established
+
         return ProjectService;
     }
 

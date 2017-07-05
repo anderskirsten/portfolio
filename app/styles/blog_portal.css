@@ -18,9 +18,9 @@
 
 .titles-blog-portal {
   display: flex;
-  flex-wrap: wrap;
+  flex-wrap: nowrap;
   align-items: baseline;
-  margin-left: 2vw;
+  margin-left: 5vw;
 }
 
 .blog-portal-main {
@@ -39,12 +39,12 @@
 }
 
 .page-title-blog-portal {
-  font-size: 10rem;
+  font-size: 8rem;
   font-weight: bolder;
 }
 
 .page-subtitle-blog-portal {
-  font-size: 5rem;
+  font-size: 4rem;
   font-weight: bold;
   margin-left: 2vw;
 }
@@ -63,7 +63,7 @@
   flex-direction: column;
   flex-wrap: nowrap;
   padding: 2vh 2vw 2vh 2vw;
-  margin-left: 2vw;
+  margin: 2vw 0 0 2vw;
   height: auto;
   width: 28vw;
   min-width: 300px;
@@ -141,6 +141,11 @@ tr.read-more-btn-container {
   font-size: 2.25rem;
 }
 
+.read-more-btn:active {
+  color: black;
+  border: none;
+}
+
 @media (max-width: 600px) {
   .blog-portal-content {
     grid-template-columns: 1fr;
@@ -150,5 +155,52 @@ tr.read-more-btn-container {
         "main"
         "main"
         "footer";
+  }
+}
+
+@media (min-width: 976px) and (max-width: 1235px) {
+  .page-title-blog-portal {
+    font-size: 6rem;
+  }
+
+  .page-subtitle-blog-portal {
+    font-size: 3rem;
+  }
+}
+
+@media (min-width: 451px) and (max-width: 975px) {
+  .titles-blog-portal {
+    display: block;
+    align-items: baseline;
+    margin-left: 5vw;
+  }
+
+  .page-title-blog-portal {
+    font-size: 6rem;
+  }
+
+  .page-subtitle-blog-portal {
+    font-size: 3rem;
+  }
+}
+
+@media (max-width: 450px) {
+  .titles-blog-portal {
+    display: block;
+    margin-left: 5vw;
+    padding-top: 10vh;
+  }
+
+  .page-title-blog-portal {
+    font-size: 5rem;
+  }
+
+  .page-subtitle-blog-portal {
+    font-size: 2rem;
+  }
+
+  .blog-portal-main {
+    position: relative;
+    margin-right: 20vw;
   }
 }

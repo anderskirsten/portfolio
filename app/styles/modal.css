@@ -1,63 +1,51 @@
 .modal-dialog {
   height: 100vh;
   width: 100vw;
-  overflow: visible;
   margin: 0;
-  position: relative;
 }
 
-.modal-content {
-  color: rgb(73,147,120);
+.modal-box.project-modal {
+  width: 100vw;
+  height: 100vh;
+  display: grid;
+  overflow: hidden;
+  grid-template-columns: 1fr 3fr;
+  grid-template-areas:
+    "links study"
+    "image study"
+    "footer footer";
+  grid-gap: 1vh;
   background-color: rgba(0,0,0,0.7);
-  height: 100vh;
-  width: 100vw;
-  padding: 5vw;
-}
-
-.modal-box {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  flex-wrap: nowrap;
-  height: 100vh;
-  width: 100vw;
-  position: relative;
-}
-
-.modal-box.demo-msg {
-  height: 40vh;
-  width: 60vw;
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
-  position: relative;
-  top: 10vh;
+  color: rgb(73,147,120);
+  position: fixed;
+  top: 0;
+  left: 0;
+  padding: 2vh 0vw 2vh 2vw;
 }
 
 .links-container {
+  grid-area: links;
+  height: 100px;
+  width: 20vw;
   display: flex;
-  flex-direction: column;
-  justify-content: space-around;
+  flex-direction: row;
+  justify-content: flex-start;
   flex-wrap: nowrap;
-  height: 50vh;
-  width: 15vw;
-  margin-left: 10vw;
-  margin-right: 0;
-  position: relative;
-  top: 8vh;
+  position: fixed;
+  top: 20vh;
+  padding-left: 2vw;
 }
 
 .close-btn-container {
-  position: relative;
-  bottom: 5vh;
-  left: 1vw;
+  margin: 1.5vh 0 0 1vw;
 }
 
 .btn-close {
   background-color: rgba(0,0,0,0.2);
   border: none;
   color: rgb(73,147,120);
-  font-size: 2rem;
+  font-size: 3rem;
+  font-weight: bolder;
 }
 
 .btn-close-demo {
@@ -81,8 +69,7 @@
   height: 64px;
   background-color: none;
   box-shadow: none;
-  position: relative;
-  bottom: 10vh;
+  margin-left: 2vw;
 }
 
 .live-site-demo.lk-chat {
@@ -116,35 +103,35 @@
   height: 64px;
   background-color: none;
   box-shadow: none;
-  position: relative;
-  bottom: 15vh;
+  margin-left: 2vw;
 }
 
 .modal-img-container {
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    flex-wrap: nowrap;
-    height: 250px;
-    width: 300px;
-    position: relative;
-    right: 5vw;
-    top: 8vh;
+  grid-area: image;
+  position: fixed;
+  top: 30vh;
+  width: 20vw;
+  padding-left: 2vw;
 }
 
 .case-study-container {
+  grid-area: study;
   display: inline-flex;
   flex-direction: column;
+  justify-content: flex-start;
+  width: 75vw;
   height: auto;
-  width: 40vw;
   overflow-y: auto;
   color: rgb(73,147,120);
   font-weight: 400;
   text-align: justify;
-  padding: 0vh 1vw 1vh 1vw;
+  padding: 0vh 2vw 2vh 0;
+  margin-left: 0;
   position: relative;
-  right: 2vw;
-  top: 3vh;
+}
+
+.case-study-container:focus {
+  outline: none;
 }
 
 .case-study-container::-webkit-scrollbar {
@@ -160,169 +147,53 @@
   outline: 1px solid slategrey;
 }
 
-@media (max-width: 425px) {
-  .modal-content {
-    margin-top: 10vh;
-    right: 5vw;
-    height: 100vh;
-  }
-
-  .modal-box {
-    flex-direction: column;
-  }
-
-  .links-container {
-    flex-direction: row;
-    left: 22vw;
-    top: 5vh;
-    padding-top: 2vh;
-  }
-
-  .close-btn-container {
-    top: 3vh;
-    margin-right: 2vw;
-  }
-
-  .live-site-demo {
-    left: 5vw;
-    top: .5vh;
-    margin-right: 2vw;
-  }
-
-  .code-link {
-    left: 5vw;
-    top: .5vh;
-  }
-
-  .modal-img-container {
-    height: 185px;
-    width: 225px;
-    justify-content: center;
-    left: 10vw;
-    top: 0;
-    padding-bottom: 15vh;
-    padding-top: 5vh;
-  }
-
-  .modal-img-container img {
-    height: 185px;
-    width: 225px;
-  }
-
-  .case-study-container {
-    width: 80vw;
-    height: 60vh;
-    align-self: center;
-    margin-top: 0;
-    padding-top: 0;
-  }
+footer.project-footer {
+  grid-area: footer;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  width: 100vw;
+  height: 5vh;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  color: black;
+  background-color: rgb(73,147,120);
+  padding-top: 2vh;
 }
 
-@media (min-width: 426px) and (max-width: 599px) {
-  .modal-content {
-    margin-top: 3vh;
-    right: 5vw;
-    height: 100vh;
-  }
-
-  .modal-box {
-    flex-direction: column;
-  }
-
-  .links-container {
-    flex-direction: row;
-    left: 22vw;
-    top: 5vh;
-    padding-top: 2vh;
-    padding-bottom: 10vh;
-  }
-
-  .close-btn-container {
-    top: 3vh;
-    margin-right: 2vw;
-  }
-
-  .live-site-demo {
-    left: 5vw;
-    top: .5vh;
-    margin-right: 2vw;
-  }
-
-  .code-link {
-    left: 5vw;
-    top: .5vh;
-  }
-
-  .modal-img-container {
-    justify-content: center;
-    left: 20vw;
-    top: 0;
-    padding-bottom: 15vh;
-    padding-top: 15vh;
-  }
-
-  .case-study-container {
-    width: 80vw;
-    height: 60vh;
-    left: 3vw;
-    align-self: center;
-    padding-top: 5vh;
-  }
-}
-
-@media (min-width: 600px) and (max-width: 850px) {
-  .modal-box {
-    padding-top: 5.5vh;
-  }
-
-  .modal-content {
-    margin-top: 2vh;
-    right: 1.5vw;
+@media (max-width: 1250px) {
+  .modal-box.project-modal {
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas:
+      "links image"
+      "study study"
+      "footer footer";
   }
 
   .links-container {
+    grid-area: links;
+    height: 100px;
+    width: 100vw;
+    display: flex;
     flex-direction: row;
-    top: 6vh;
-    margin-left: 2vw;
-  }
-
-  .close-btn-container {
-    position: relative;
-    bottom: 2vh;
-    left: 10vw;
-  }
-
-  .live-site-demo {
-    bottom: 5vh;
-    left: 13vw;
-  }
-
-  .code-link {
-    bottom: 5vh;
-    left: 15vw;
-  }
-
-  .modal-img-container {
-    right: 10vw;
+    justify-content: flex-start;
+    flex-wrap: nowrap;
+    position: fixed;
     top: 15vh;
+    padding-left: 25vw;
+  }
+
+  .modal-img-container {
+    top: 1vh;
+    width: 100vw;
+    padding-left: 50vw;
   }
 
   .case-study-container {
-    right: 5vw;
-    width: 50vw;
-  }
-}
+    width: 95vw;
+    top: 30vh;
 
-@media (min-width: 851px) and (max-width: 1175px) {
-  .modal-box {
-    bottom: 5vh;
-  }
 
-  .modal-content {
-    bottom: 5vh;
-  }
-
-  .links-container {
-    margin-left: 5vw;
   }
 }

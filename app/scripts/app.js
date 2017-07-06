@@ -32,6 +32,13 @@
                   url: '/blog-portal',
                   controller: 'BlogCtrl as blog',
                   templateUrl: '/templates/blog_portal.html'
+              })
+
+          $stateProvider
+              .state('contact', {
+                  url: '/contact',
+                  controller: 'ContactCtrl as contact',
+                  templateUrl: '/templates/contact.html'
               });
     }
 

@@ -1,0 +1,153 @@
+.contact-container {
+  position: fixed;
+  height: 100vh;
+  width: 100vw;
+  overflow-y: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+.contact-titles {
+  position: relative;
+  top: 0;
+  left: 0;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: baseline;
+  margin-bottom: 5vh;
+}
+
+.page-title-contact {
+  font-family: sans-serif Monserrat;
+  font-size: 10rem;
+  font-weight: bolder;
+  margin: 2vh 0 0 3vw;
+}
+
+.page-subtitle-contact {
+  display: inline-flex;
+  justify-content: space-around;
+  font-family: sans-serif Monserrat;
+  font-size: 2rem;
+  font-style: italic;
+  margin-left: 2vw;
+}
+
+blockquote {
+  border-left: solid .5vw black;
+}
+
+.form-container {
+  display: block;
+  text-align: center;
+  position: relative;
+}
+
+.contact-form {
+  height: 60vh;
+  width: 100vw;
+  display: inline-block;
+  margin: auto;
+}
+
+.name-input {
+  align-items: center;
+}
+
+.contact-form label {
+  position: absolute;
+  font-size: 3rem;
+  font-weight: bold;
+  display: block;
+  text-align: right;
+  padding-right: 5vw;
+  margin-bottom: 5vh;
+  right: 60vw;
+}
+
+.contact-form input {
+  width: 25vw;
+  min-width: 250px;
+  height: 50px;
+  margin-bottom: 5vh;
+  font-size: 2rem;
+}
+
+.contact-form textarea {
+  width: 25vw;
+  min-width: 250px;
+  height: 175px;
+  margin-bottom: 2vh;
+  font-size: 1.5rem;
+}
+
+.btn-send-msg button {
+  width: 25vw;
+  min-width: 250px;
+  height: 50px;
+  color: rgb(73,147,120);
+  background-color: black;
+  border: none;
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+@media (min-width: 675px) and (max-width: 875px) {
+  .contact-form label {
+    padding-right: 5vw;
+    margin-bottom: 5vh;
+    right: 65vw;
+  }
+}
+
+@media (min-width: 575px) and (max-width: 674px) {
+  .form-container {
+    top: 20vh;
+  }
+
+  .contact-titles {
+    top: 15vh;
+  }
+
+  .contact-form label {
+    padding-right: 5vw;
+    margin-bottom: 5vh;
+    right: 65vw;
+  }
+}
+
+@media (max-width: 574px) {
+  .form-container {
+    top: 20vh;
+  }
+
+  .contact-titles {
+    top: 15vh;
+  }
+
+  .page-title-contact {
+    font-size: 7rem;
+  }
+
+  .page-subtitle-contact {
+    font-size: 2rem;
+  }
+
+  .contact-form label {
+    padding-right: 5vw;
+    margin-bottom: 5vh;
+    margin-right: 5vw;
+    right: 60vw;
+    font-size: 2.5rem;
+  }
+
+  .contact-form input {
+    margin-left: 5vw;
+  }
+
+  .contact-form textarea {
+    margin-left: 5vw;
+  }
+}

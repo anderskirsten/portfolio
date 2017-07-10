@@ -1,0 +1,116 @@
+body {
+    color: black;
+    min-height: 100%;
+    background-color: rgb(73,147,120);
+    overflow: auto;
+}
+
+.home-content {
+  display: -webkit-flex;
+  display: flex;
+  -webkit-flex-direction: row;
+  flex-direction: row;
+  -webkit-justify-content: flex-start;
+  justify-content: flex-start;
+}
+
+.home-image-left {
+  background-image: url(../assets/GirlGraffiti_Mexico2016.jpg);
+  background-repeat: no-repeat;
+  background-position: left center;
+  background-size: cover;
+  height: 100vh;
+  width: 35vw;
+  overflow-x: visible;
+}
+
+.home-image-right {
+  background-image: url(../assets/BoyGraffiti_Mexico2016.jpg);
+  background-repeat: no-repeat;
+  background-position: right center;
+  background-size: cover;
+  height: 100vh;
+  width: 35vw;
+  overflow-x: visible;
+}
+
+.home-content-center {
+  background-color: rgb(73,147,120);
+  height: 100vh;
+  width: 30vw;
+  min-width: 225px;
+  z-index: 99;
+  text-align: center;
+}
+
+.name-title {
+  font-size: 2rem;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: bolder;
+}
+
+.fa-chevron-down {
+  font-size: 5rem;
+  padding-top: 5rem;
+  cursor: pointer;
+}
+
+.art-credit-container {
+  position: absolute;
+  display: inline-flex;
+  bottom: 3vh;
+  left: 3vw;
+}
+
+.fa-eye {
+  position: relative;
+  margin: auto;
+  font-size: 3rem;
+  cursor: pointer;
+  z-index: 100;
+}
+
+.graffiti-art-credit {
+  color: black;
+  font-weight: bolder;
+  position: relative;
+  margin-left: 1vw;
+  background-color: rgba(64,132,107,0.7);
+  background-position: center;
+  background-size: contain;
+  background-clip: content-box;
+}
+
+.headshot {
+  padding-top: 5rem;
+  margin: auto;
+  width: 50%;
+}
+
+@media (max-width: 325px) {
+  .headshot {
+    display: none;
+  }
+
+  .home-content-center {
+    margin-top: 25vh;
+  }
+}
+
+
+@media (max-width: 650px) {
+  .home-image-left{
+    display: none;
+  }
+}
+
+@media (max-width: 1000px) {
+
+  .home-image-right {
+    display: none;
+  }
+
+  .home-content-center {
+    margin-left: 10vw;
+  }
+}
